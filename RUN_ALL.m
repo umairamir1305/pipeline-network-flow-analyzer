@@ -1,10 +1,7 @@
 % =========================================================
-%  MASTER RUNNER — Pipeline Network Flow Analysis Suite
+%  MASTER RUNNER Pipeline Network Flow Analysis Suite
 %
 %  Author : Umair
-%  Course : Mechanical Engineering — 4th Semester
-%  Tool   : MATLAB
-%
 %  Project: Pipeline Network Flow Analyzer with
 %           Pump Selection & Cavitation Risk Assessment
 %
