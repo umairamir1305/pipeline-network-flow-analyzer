@@ -1,6 +1,6 @@
-# Pipeline Network Flow Analyzer — MATLAB
+# Pipeline Network Flow Analyzer: MATLAB Simulation
 
-A multi-physics fluid mechanics simulation suite for a 7-pipe, 2-loop water distribution network. Implements industry-standard methods including the **Hardy-Cross algorithm**, **Colebrook-White friction factors**, **pump curve intersection**, **NPSH cavitation assessment**, and **boundary layer development analysis**.
+A  fluid mechanics simulation suite for a 7-pipe, 2-loop water distribution network. Implements industry-standard methods including the **Hardy-Cross algorithm**, **Colebrook-White friction factors**, **pump curve intersection**, **NPSH cavitation assessment**, and **boundary layer development analysis**.
 
 ---
 
@@ -9,7 +9,7 @@ A multi-physics fluid mechanics simulation suite for a 7-pipe, 2-loop water dist
 Given a pipe network with known geometry and demands, this suite:
 
 1. **Solves flow distribution** across all pipes simultaneously using the Hardy-Cross iterative method
-2. **Computes friction factors** using the implicit Colebrook-White equation (industry standard — used in every real pipe network software)
+2. **Computes friction factors** using the implicit Colebrook-White equation (industry standard; used in every real pipe network software)
 3. **Generates a full Moody diagram** and overlays the actual operating points of every pipe
 4. **Selects between three pump options**, finds each operating point analytically, and flags cavitation risk using NPSH analysis
 5. **Analyses boundary layer development** in the pipe entry region and plots velocity profile evolution
@@ -93,7 +93,7 @@ H_pump(Q)   = H₀ - a·Q - b·Q²
 Operating point: H_system = H_pump  →  solved via fzero
 ```
 
-### Cavitation — NPSH
+### Cavitation: NPSH
 ```
 NPSH_available = (p_atm - p_vapour)/(ρg) + Vs²/2g - z_s
 Cavitation if: NPSH_available < NPSH_required
@@ -124,13 +124,13 @@ Turbulent:  L_h = 4.4·Re^(1/6)·D
 
 ## Skills Demonstrated
 
-- Numerical methods — iterative solution of nonlinear equation systems
-- Fluid mechanics — pipe flow, friction factors, head loss, flow regimes
-- Turbomachinery — pump curves, system curves, operating point analysis
-- Cavitation theory — NPSH calculation and risk assessment
-- Boundary layer theory — entry length, developing velocity profiles
-- MATLAB — `fsolve`, `fzero`, data structures, multi-figure plotting
-- Engineering judgment — parametric design studies and interpretation
+- Numerical methods: iterative solution of nonlinear equation systems
+- Fluid mechanics: pipe flow, friction factors, head loss, flow regimes
+- Turbomachinery: pump curves, system curves, operating point analysis
+- Cavitation theory: NPSH calculation and risk assessment
+- Boundary layer theory: entry length, developing velocity profiles
+- MATLAB: `fsolve`, `fzero`, data structures, multi-figure plotting
+- Engineering judgment: parametric design studies and interpretation
 
 ---
 
@@ -143,7 +143,7 @@ B.E. Mechanical Engineering — 4th Semester, NUST Karachi
 
 ## References
 
-1. Munson, Young, Okiishi — *Fundamentals of Fluid Mechanics*
-2. White, F.M. — *Fluid Mechanics*, 8th Edition
-3. Moody, L.F. — *Friction Factors for Pipe Flow*, ASME Trans. 1944
-4. Hardy Cross — *Analysis of Flow in Networks of Conduits*, 1936
+1. Munson, Young, Okiishi *Fundamentals of Fluid Mechanics*
+2. White, F.M. *Fluid Mechanics*, 8th Edition
+3. Moody, L.F. *Friction Factors for Pipe Flow*, ASME Trans. 1944
+4. Hardy Cross *Analysis of Flow in Networks of Conduits*, 1936
